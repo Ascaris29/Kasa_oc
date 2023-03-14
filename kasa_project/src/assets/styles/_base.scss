@@ -14,5 +14,14 @@ body{
 
 li{
     list-style-type: none;
+    
 }
 
+.link{
+    color:var(--primary);
+    font-size:18px;
+}
+
+.active{
+    text-decoration:underline;
+}

@@ -15,12 +15,12 @@
             }
         }
     }
-    .headerItems{
-        color:var(--primary);
-        transition: 2s text-decoration;
-        cursor:pointer;
-        &:hover{
-            text-decoration: underline;
-        }
-    }
+    
+}
+/*sorti de la classe header car sinon je ne peux pas mettre de classe active dessus*/
+.headerItems{
+    color:var(--primary);
+    text-decoration:none;
+    cursor:pointer;
+    font-size:24px;
 }

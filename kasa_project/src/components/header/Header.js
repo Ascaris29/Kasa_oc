@@ -1,5 +1,6 @@
 import image from "../../assets/images/logo_header.png";
 import style from "./Header.module.scss";
+import { NavLink } from "react-router-dom";
 
 export default function Header(){
     return (
@@ -9,8 +10,19 @@ export default function Header(){
             </div>
             <div className={`${style.headerNav}`}>
                 <ul className="d-flex">
-                    <li className={`${style.headerItems} m-r-30`}>Accueil</li>
-                    <li className={`${style.headerItems}`}>A Propos</li>
+                    <NavLink 
+                    className={`${style.headerItems} m-r-30`}
+                    to="/homepage" 
+                    end
+                    > 
+                    Accueil 
+                    </NavLink>
+                    <NavLink 
+                    className={`${style.headerItems}`} 
+                    to="/apropos"
+                    >
+                    A Propos
+                    </NavLink>
                 </ul>
             </div>
         </header>

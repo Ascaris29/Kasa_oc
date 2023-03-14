@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import style from "./404.module.scss";
@@ -24,7 +24,7 @@ export default function Error404(){
                         {status}  
                     </div>
                     <span className={`${style.errorTxt}`}>{gestionErreur()}</span>
-                    <p>R</p>
+                    <Link className="link" to="/homepage"> Retourner sur la page d'accueil</Link>
                 </div>   
             <Footer />
         </div>
