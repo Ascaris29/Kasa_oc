@@ -4,17 +4,19 @@ import image from "../../assets/images/Background1.png"
 export default function FicheLogement(){
     return <div className={`${style.fichelogement} flex-fill`}>
         <div className={`${style.fichelogementBackground}`}>
-            <img src={image} alt="" />
+            <img src={image} alt="photo" />
         </div>
         <div className={`${style.fichelogementContent}`}>
             <div className="d-flex align-center flex-row justify-between">
-                <h1 className={`${style.fichelogementTitle}`}>Cozy loft on the Canal saint-Martin</h1>
-                <div className="d-flex align-items">
+                <div className="en-tete">
+                    <h1 className={`${style.fichelogementTitle}`}>Cozy loft on the Canal saint-Martin</h1>
+                    <p className={`${style.fichelogementSousTitle}`}>Paris, Île de France</p>
+                </div>
+                    <div className="identité d-flex align-items">
                     <p>Alexandre Dumas</p>
-                    <img src="" alt="" />
+                    <img className={`${style.fichelogementPhotoIdentite}`} src={ image } alt="photographie de l'utilisateur" />
                 </div>
             </div>
-            <p className={`${style.fichelogementSousTitle}`}>Paris, Île de France</p>
             <div className="d-flex align-center justify-between">
                 <div className={`${style.fichelogementTagName} d-flex`}>
                     <p>Cosy</p>

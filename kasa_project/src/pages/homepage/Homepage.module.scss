@@ -1,6 +1,9 @@
 @use "../../assets/styles/mixins" as mixin;
 
 .homepage{
+    max-width:1240px;
+    margin:auto;
+    width:100%;
     .homepageImg{
         height:223px;
         position:relative;

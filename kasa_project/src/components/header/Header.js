@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header(){
     return (
-        <header className={`${style.header} d-flex justify-between p-30 align-center`}>
+        <header className={`${style.header} d-flex justify-between align-center`}>
             <div className={`${style.headerIcon}`}>
                 <img src={image} alt="logo du site Kasa representant une maison" />
             </div>

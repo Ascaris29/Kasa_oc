@@ -1,6 +1,10 @@
 @use "../../assets/styles/mixins" as mixin;
 
 .header{
+    max-width:1240px;
+    margin:auto;
+    width:100%;
+    padding:50px 30px 0 30px;
     .headerIcon{
         img{
             width:210px;
