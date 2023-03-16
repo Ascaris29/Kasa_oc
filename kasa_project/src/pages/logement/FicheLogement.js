@@ -2,12 +2,14 @@ import style from "./FicheLogement.module.scss";
 import image from "../../assets/images/Background1.png"
 import CardDescription from "../a_propos/components/carddescription/CardDescription";
 import Tags from "./components/tags/Tags";
+import Caroussel from "./components/caroussel/Caroussel";
+import Ratings from "./components/Ratings/Ratings";
 
 export default function FicheLogement(){
     return (
         <div className={`${style.fichelogement} flex-fill d-flex flex-column`}>
             <div className={`${style.fichelogementBackground} d-flex`}>
-                <img src={image} alt="photo" />
+                <Caroussel />
             </div>
             <div className={`${style.fichelogementContent}`}>
                 <div className={`${style.fichelogementDescription}`}>
@@ -25,7 +27,7 @@ export default function FicheLogement(){
                                 <p>Alexandre Dumas</p>
                                 <img className={`${style.fichelogementPhotoIdentite}`} src={ image } alt="photographie de l'utilisateur" />
                             </div>
-                            <span className={`${style.fichelogementStars}`}>★ ★ ★ ★  ★</span>
+                            <Ratings note="3"/>
                         </div>
                 </div>
             </div>

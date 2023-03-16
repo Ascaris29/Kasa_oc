@@ -1,4 +1,4 @@
-import style from "../CardDescription.module.scss";
+import style from "./CardDescription.module.scss";
 import { useState } from "react";
 
 export default function CardDescription({title, text, className}){

@@ -39,13 +39,14 @@ export default function Caroussel(){
     }
 
     return (
-        <div className={`${style.caroussel}`}>
-            { arrayImage.map((item, i) => 
-                i === index && ( <img src={item} alt="" className={`${style.carousselImage}`}/> )
+        <>
+            { arrayImage.map((item, i) => i === index && ( 
+                <img src={item} alt="" className={`${style.carousselImage}`} key={item}/> 
+            )
             )}
             <i className={`${style.chevronLeft} fa-solid fa-chevron-left`} onClick={handleClickCarousselPrev}></i>
             <i className={`${style.chevronRight} fa-solid fa-chevron-right`} onClick={handleClickCarousselAfter}></i> 
-        </div>
+        </>
     )
 
 
