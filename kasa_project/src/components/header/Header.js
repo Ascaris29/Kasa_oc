@@ -1,13 +1,13 @@
 import image from "../../assets/images/logo_header.png";
 import style from "./Header.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header(){
     return (
         <header className={`${style.header} d-flex justify-between align-center`}>
-            <div className={`${style.headerIcon}`}>
-                <img src={image} alt="logo du site Kasa representant une maison" />
-            </div>
+            <Link className={`${style.headerIcon}`} to="/homepage">
+                <img src={image} alt="logo du site Kasa representant une maison"/>
+            </Link>
             <div className={`${style.headerNav}`}>
                 <ul className="d-flex">
                     <NavLink 

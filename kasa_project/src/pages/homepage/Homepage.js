@@ -1,6 +1,6 @@
 import style from "./Homepage.module.scss";
 import image from "../../assets/images/background_homepage.png";
-import Card from "./components/Card";
+import CardLogement from "./components/CardLogement";
 
 export default function Homepage(){
     return (
@@ -10,7 +10,17 @@ export default function Homepage(){
                 <p className={`${style.homepageTxtImg}`}>Chez vous, partout et ailleurs</p>
             </div>
             <div className={`${style.homepageGallery} m-t-30`}>
-                <Card />
+            <div className={`${style.homepageCard}`}>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+                <CardLogement className="" title="Titre de la location"/>
+            </div>
             </div>
         </main>
     )
