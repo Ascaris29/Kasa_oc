@@ -1,0 +1,14 @@
+.header{
+    max-width:1240px;
+    margin:auto;
+    width:100%;
+    .headerIcon{
+        img{
+            width:210px;
+            height:68px;
+        }
+    }
+    .headerItems{
+        color:var(--primary);
+    }
+}

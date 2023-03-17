@@ -1,0 +1,12 @@
+.fichelogementStars{
+    padding-right:10px;
+    font-size:18px;
+    margin-top:10px;
+    margin-left:auto;
+    @include mixin.lg-lt{
+        margin:0;
+    }
+    .starsColored{
+        
+    }
+}

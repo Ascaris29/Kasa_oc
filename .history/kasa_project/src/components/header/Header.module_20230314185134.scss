@@ -1,0 +1,21 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.header{
+    .headerIcon{
+        img{
+            width:210px;
+            height:68px;
+            @include mixin.sm-lt{
+                width:145px;
+            }
+        }
+    }
+    .headerItems{
+        color:var(--primary);
+        transition: 2s text-decoration;
+        cursor:pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

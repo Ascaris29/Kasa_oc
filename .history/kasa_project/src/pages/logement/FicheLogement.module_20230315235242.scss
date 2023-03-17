@@ -1,0 +1,100 @@
+@use "../../assets/styles/mixins" as mixin;
+
+
+.fichelogement{
+    max-width:1240px;
+    margin:auto;
+    padding-top:30px;
+    padding-bottom:100px;
+    color:var(--primary);
+    @include mixin.lg-lt{
+        margin:20px;
+    }
+    .fichelogementBackground{
+        width:100%;
+        height:400px;
+        max-width:100%;
+        border-radius:var(--radius);
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+    }
+    .fichelogementContent{
+        margin-top:20px;
+        display:flex;
+        flex-direction:column;
+
+        .fichelogementDescription{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            @include mixin.lg-lt{
+                flex-direction: column;
+                align-items:start;
+                justify-content: space-between;
+            }
+            .fichelogementTitle{
+                font-size:36px;
+            }
+            .fichelogementTagName{
+                margin-top:20px;
+                p{
+                    background-color:var(--primary);
+                    color:white;
+                    margin-right:20px;
+                    padding:5px 25px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .fichelogementEnTete{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin-top:20px;
+            @include mixin.lg-lt{
+                flex-direction: row-reverse;
+                align-items:center;
+                justify-content: space-between;
+                width:100%;
+            }
+            .fichelogementPhotoIdentite{
+                width:65px;
+                height:65px;
+                border-radius:50%;
+                object-fit:cover;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .fichelogementStars{
+                padding-right:10px;
+            }
+            .fichelogementIdentity{
+                
+                @include mixin.lg-lt{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    .fichelogementBlocs{
+        display:flex;
+        gap:30px;
+        padding-top:30px;
+        @include mixin.md-lt{
+            flex-direction:column;
+        }
+        .fichelogementCard{
+            width: calc(100%/2);
+            @include mixin.md-lt{
+                width:100%;
+            }
+        }
+    }
+}

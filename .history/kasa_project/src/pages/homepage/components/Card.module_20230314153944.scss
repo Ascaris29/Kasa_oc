@@ -1,0 +1,13 @@
+.homepageCard{
+    display:grid;
+    grid-template-columns: repeat(3, 340px);
+    justify-items: center;
+    place-content: center;
+    gap:30px;
+    .card{
+        width:340px;
+        height:340px;
+        border-radius:10px;
+        background-color:red;
+    }
+}

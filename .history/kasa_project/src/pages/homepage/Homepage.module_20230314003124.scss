@@ -1,0 +1,15 @@
+.homepage{
+    .homepageImg{
+        height:223px;
+        position:relative;
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            border-radius:25px;
+        }
+        .homepageTxtImg{
+            position:absolute;
+        }
+    }
+}

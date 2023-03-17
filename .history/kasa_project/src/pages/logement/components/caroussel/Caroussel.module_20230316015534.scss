@@ -1,0 +1,17 @@
+.caroussel{
+    position:relative;
+    .carousselImage{
+       
+        
+    }
+    .chevronRight{
+        position:absolute;
+        top:50%;
+        left:50%;
+        font-size:50px;
+        color:white;
+    }
+    .chevronLeft{
+        position:absolute;
+    }
+}

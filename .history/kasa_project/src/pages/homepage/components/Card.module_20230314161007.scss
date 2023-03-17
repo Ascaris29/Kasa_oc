@@ -1,0 +1,36 @@
+@use "../../../assets/styles/mixins" as mixin;
+
+
+.homepageCard{
+    display:grid;
+    grid-template-columns: repeat(3, 340px);
+    justify-items: center;
+    place-content: center;
+    gap:30px;
+    padding:50px;
+    @include mixin.lg-lt{
+        grid-template-columns: repeat(2, 340px);
+    }
+    @include mixin.md-lt{
+        grid-template-columns: repeat(1, 340px);
+    }
+    @include mixin.xs{
+        grid-template-columns: 200px;
+    }
+    .card{
+        width:340px;
+        height:340px;
+        border-radius:10px;
+        background:linear-gradient(180deg, rgba(255,96,96) 0%, rgba(0,0,0, 0.8));
+        position:relative;
+        .titleCard{
+            color:white;
+            position:absolute;
+            bottom:10%;
+            font-size:18px;
+            font-weight:500;
+            line-height: 25px;
+            margin-left:10px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.error{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    .errorStatus{
+        font-size:200px;
+        font-weight:600;
+        color:var(--primary);
+        @include mixin.xs{
+            font-size:
+        }
+    }
+    .errorTxt{
+        color:var(--primary);
+        font-weight:500;
+        font-size:35px;
+        text-align:center;
+        @include mixin.xs{
+            font-size:30px;
+        }
+    }
+}

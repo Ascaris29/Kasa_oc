@@ -1,0 +1,6 @@
+.homepageCard{
+    display:grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-auto-columns: repeat(3,340px);
+    place-content: center;
+}

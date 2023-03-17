@@ -1,0 +1,36 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.header{
+    max-width:1240px;
+    margin:auto;
+    width:100%;
+    padding:50px 30px 0 30px;
+    .headerIcon{
+        img{
+            width:210px;
+            height:68px;
+            @include mixin.sm-lt{
+                width:145px;
+                height:47px;
+            }
+            @include mixin.xs{
+                width:99px;
+                height:35px;
+            }
+        }
+    }
+    
+}
+/*sorti de la classe header car sinon je ne peux pas mettre de classe active dessus*/
+.headerItems{
+    color:var(--primary);
+    text-decoration:none;
+    cursor:pointer;
+    font-size:24px;
+    @include mixin.sm-lt{
+        font-size:20px;
+    }
+    @include mixin.xs{
+        font-size:15px;
+    }
+}

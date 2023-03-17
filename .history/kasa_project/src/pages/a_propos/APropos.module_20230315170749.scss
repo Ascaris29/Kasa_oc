@@ -1,0 +1,29 @@
+@use "../../assets/styles/mixins" as mixin;
+
+
+.apropos{
+    height:150vh;
+    max-width:1240px;
+    margin:auto;
+    width:100%;
+    .aproposBackground{
+        width:100%;
+        height:223px;
+        img{
+            width:100%;
+            height:100%;
+            border-radius:var(--radius);
+            object-fit:cover;
+        }
+    }
+    
+    .aproposCards{
+        padding:30px 50px 10px 50px;
+        gap:30px;
+        display:flex;
+        flex-direction: column;
+        @include mixin.sm-lt{
+            padding: 30px 0;
+        }
+    }
+}
