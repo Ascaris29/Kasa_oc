@@ -13,8 +13,8 @@ export default function FicheLogement(){
     const { idUrl } = useParams();
  
     const donnée = data.find(i => i.id === idUrl);
-    console.log(donnée)
-   
+
+    console.log(donnée.pictures)
     
     return (
         <>

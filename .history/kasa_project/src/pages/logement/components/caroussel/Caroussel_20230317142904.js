@@ -27,6 +27,12 @@ export default function Caroussel({img}){
             setIndex(0);
         }   
     }
+
+    // //a voir avec julien
+    // if(index === arrayImage.length){
+    //     setIndex(0)
+    // }
+
     return (
         <>
             { arrayImage.map((item, i) => i === index && ( 

@@ -13,13 +13,14 @@ export default function FicheLogement(){
     const { idUrl } = useParams();
  
     const donnée = data.find(i => i.id === idUrl);
-    console.log(donnée)
-   
+
+    console.log(donnée.pictures)
     
     return (
         <>
             <div className={`${style.fichelogement} flex-fill d-flex flex-column`}>
                 <div className={`${style.fichelogementBackground} d-flex`}>
+                    { donnée.map()}
                     <Caroussel img={donnée.pictures}/>
                 </div>
                 <div className={`${style.fichelogementContent}`}>

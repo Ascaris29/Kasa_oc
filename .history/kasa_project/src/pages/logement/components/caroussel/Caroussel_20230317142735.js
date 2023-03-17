@@ -5,7 +5,8 @@ import style from "./Caroussel.module.scss";
 export default function Caroussel({img}){
 
     //importer les images de l'api
-    const arrayImage = img;
+    const arrayImage = [img];
+
 
     const [index, setIndex] = useState(0);
 
@@ -27,11 +28,18 @@ export default function Caroussel({img}){
             setIndex(0);
         }   
     }
+
+    //a voir avec julien
+    if(index === arrayImage.length){
+        setIndex(0)
+    }
+
     return (
         <>
             { arrayImage.map((item, i) => i === index && ( 
                 <img src={item} alt="" className={`${style.carousselImage}`} key={item}/> 
             )
+            
             )}
             <i className={`${style.chevronLeft} fa-solid fa-chevron-left`} onClick={handleClickCarousselPrev}></i>
             <i className={`${style.chevronRight} fa-solid fa-chevron-right`} onClick={handleClickCarousselAfter}></i> 

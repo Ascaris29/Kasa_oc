@@ -1,11 +1,15 @@
 import { useState } from "react";
 import style from "./Caroussel.module.scss";
+import { data } from "../../../../data/Data";
 
+import img1 from "../../../../assets/images/pexels-photo-950058.webp";
+import img2 from "../../../../assets/images/pexels-photo-1013427.jpeg";
+import img3 from "../../../../assets/images/pexels-photo-1612351.jpeg";
 
-export default function Caroussel({img}){
+export default function Caroussel(img){
 
     //importer les images de l'api
-    const arrayImage = img;
+    const arrayImage = [img];
 
     const [index, setIndex] = useState(0);
 
@@ -20,13 +24,17 @@ export default function Caroussel({img}){
     }
 
     function handleClickCarousselAfter(){
-        if(index < arrayImage.length -1 ){
+        if(index < arrayImage.length -1){
             let i = index + 1;
             setIndex(i);
-        }else{
-            setIndex(0);
-        }   
+        };   
     }
+
+    //a voir avec julien
+    if(index === arrayImage.length){
+        setIndex(0)
+    }
+
     return (
         <>
             { arrayImage.map((item, i) => i === index && ( 

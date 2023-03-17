@@ -5,7 +5,9 @@ import style from "./Caroussel.module.scss";
 export default function Caroussel({img}){
 
     //importer les images de l'api
-    const arrayImage = img;
+    const arrayImage = [img];
+    console.log(arrayImage);
+
 
     const [index, setIndex] = useState(0);
 
@@ -27,6 +29,12 @@ export default function Caroussel({img}){
             setIndex(0);
         }   
     }
+
+    // //a voir avec julien
+    // if(index === arrayImage.length){
+    //     setIndex(0)
+    // }
+
     return (
         <>
             { arrayImage.map((item, i) => i === index && ( 
