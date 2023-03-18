@@ -68,7 +68,7 @@ export default function FicheLogement(){
                                 classNameCard={`${style.fichelogementCard}`} 
                                 title="Équipements" 
                                 text={data.equipments.map((i) => (<p>{i}</p>))} 
-                                key={data.equipments.map((i) => (i))}
+                                key={data.equipments.map((i) => i)}
                             /> 
                     </div>
                 </div>

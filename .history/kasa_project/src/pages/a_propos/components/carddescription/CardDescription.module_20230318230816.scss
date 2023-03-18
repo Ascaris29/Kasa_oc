@@ -3,30 +3,23 @@
 @keyframes disparition {
     0%{
         height: 100%;
-        padding:20px; 
     }
     20%{
         height: 80%;
-        padding:20px;
     }
     40%{
         height: 60%;
-        padding:20px;
     }
     60%{
         height: 40%;
-        padding:20px;
     }
     80%{
         height: 20%;
-        padding:20px;
-    }
-    90%{
-        height:10%;
-        padding:20px;
     }
     100%{
         height:0%;
+        padding:0;
+        display:none;
     }
 }
 
@@ -36,23 +29,19 @@
     }
     20%{
         height: 20%;
-        padding:20px
     }
     40%{
         height: 40%;
-        padding:20px;
     }
     60%{
         height: 60%;
-        padding:20px
     }
     80%{
         height: 80%;
-        padding:20px;
     }
     100%{
         height:100%;
-        padding:20px;
+       
     }
 }
 
@@ -74,17 +63,18 @@
                 cursor:pointer; 
             }
             .cardDescriptionHidden{
-                animation: 0.3s disparition forwards;
-                background-color:var(--grey1);
-                overflow: hidden;       
-                    
+                animation: 1s disparition forwards;
+                padding: 20px 30px 20px 15px;
+                background-color:black;
+                visibility:hidden;
             }
             .cardDescriptionShow{
+                padding: 20px 30px 20px 15px;
                 display:block;
                 color:var(--primary);
-                background-color:var(--grey1);
-                animation: 0.3s apparition forwards;
-                overflow: hidden;
+                background-color:black;
+                animation: 2s apparition forwards;
+
             }
             .cardDescriptionIcon{
                 cursor:pointer;

@@ -9,19 +9,17 @@
         background:linear-gradient(180deg, rgba(255,96,96) 0%, rgba(0,0,0, 0.8));
         position:relative;
         cursor:pointer;
-        transition:0.5s;
         @include mixin.xs{
             height:200px;
-        }
-        &:hover{
-            transform: scale(1.1);
         }
         .cardImg{
             width:100%;
             height:100%;
             object-fit:cover;
             border-radius: 10px;
-            
+            &:hover{
+                transform: scale(1.1);
+            }
         }
         .titleCard{
             background-color:rgba(0,0,0, 0.5);

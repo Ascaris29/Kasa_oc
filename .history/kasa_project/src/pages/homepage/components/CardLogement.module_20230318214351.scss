@@ -9,7 +9,7 @@
         background:linear-gradient(180deg, rgba(255,96,96) 0%, rgba(0,0,0, 0.8));
         position:relative;
         cursor:pointer;
-        transition:0.5s;
+        transition:2s ;
         @include mixin.xs{
             height:200px;
         }
