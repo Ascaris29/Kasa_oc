@@ -1,0 +1,18 @@
+import axios from "axios";
+import { useState } from "react";
+
+
+export default function UseFetchDataById(url){
+    const [data, setData] = useState([]);
+    try{
+        async function fetchData(){
+            const response = await axios.get({`${url} `});
+            setData(response.data);  
+        }
+        fetchData();
+       
+    }catch(e){
+        console.log("erreur")
+    }
+    return [data, setData];
+}
