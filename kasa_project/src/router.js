@@ -9,7 +9,7 @@ import FicheLogement from './pages/logement/FicheLogement';
 
 export const router = createBrowserRouter([
     {
-        path : "/",
+        path : "/Kasa_oc",
         element : <App />,
         errorElement: <Error404 />,
         children : [
