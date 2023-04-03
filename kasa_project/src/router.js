@@ -18,15 +18,15 @@ export const router = createBrowserRouter([
                 element : <Homepage />
             } ,
             {
-                path : "/homepage",
+                path : "/Kasa_oc/homepage",
                 element : <Homepage />
             },
             {
-                path: "/apropos",
+                path: "/Kasa_oc/apropos",
                 element : <APropos />
             },
             {
-                path: "/logement/:idUrl",
+                path: "/Kasa_oc/logement/:idUrl",
                 element : <FicheLogement />
             },
         ],
