@@ -61,6 +61,7 @@
             border-radius:5px;
             font-size:24px;
             gap:20px;
+            height:auto;
             .cardDescriptionTitle{
                 background-color:var(--primary);
                 height:45px;
@@ -77,10 +78,9 @@
                 animation: 0.3s disparition forwards;
                 background-color:var(--grey1);
                 overflow: hidden;       
-                    
+                color:var(--primary);
             }
             .cardDescriptionShow{
-                display:block;
                 color:var(--primary);
                 background-color:var(--grey1);
                 animation: 0.3s apparition forwards;
