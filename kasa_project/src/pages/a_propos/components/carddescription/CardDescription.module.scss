@@ -75,16 +75,18 @@
                 cursor:pointer; 
             }
             .cardDescriptionHidden{
-                animation: 0.3s disparition forwards;
+                //animation: 0.3s disparition forwards;
                 background-color:var(--grey1);
                 overflow: hidden;       
                 color:var(--primary);
+                display:none;
             }
             .cardDescriptionShow{
                 color:var(--primary);
                 background-color:var(--grey1);
-                animation: 0.3s apparition forwards;
+                //animation: 0.3s apparition forwards;
                 overflow: hidden;
+                display:block;
             }
             .cardDescriptionIcon{
                 cursor:pointer;

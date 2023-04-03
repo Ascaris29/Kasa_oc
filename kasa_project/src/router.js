@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
         errorElement: <Error404 />,
         children : [
             {
-                path : "/",
+                path : "/Kasa_oc",
                 element : <Homepage />
             } ,
             {
