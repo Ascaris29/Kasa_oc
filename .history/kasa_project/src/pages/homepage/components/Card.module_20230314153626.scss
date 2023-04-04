@@ -1,8 +1,0 @@
-.homepageCard{
-    display:grid;
-    grid-template-columns: repeat(3, 340px);
-    grid-auto-columns: repeat(3,340px);
-    justify-items: center;
-    place-content: center;
-    gap:20px;
-}
