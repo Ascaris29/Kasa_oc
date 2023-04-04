@@ -9,24 +9,24 @@ import FicheLogement from './pages/logement/FicheLogement';
 
 export const router = createBrowserRouter([
     {
-        path : "/Kasa_oc",
+        path : "/Kasa",
         element : <App />,
         errorElement: <Error404 />,
         children : [
             {
-                path : "/Kasa_oc",
+                path : "/Kasa",
                 element : <Homepage />
             } ,
             {
-                path : "/Kasa_oc/homepage",
+                path : "/Kasa/homepage",
                 element : <Homepage />
             },
             {
-                path: "/Kasa_oc/apropos",
+                path: "/Kasa/apropos",
                 element : <APropos />
             },
             {
-                path: "/Kasa_oc/logement/:idUrl",
+                path: "/Kasa/logement/:idUrl",
                 element : <FicheLogement />
             },
         ],

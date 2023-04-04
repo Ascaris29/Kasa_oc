@@ -76,9 +76,6 @@
             }
             .cardDescriptionHidden{
                 //animation: 0.3s disparition forwards;
-                background-color:var(--grey1);
-                overflow: hidden;       
-                color:var(--primary);
                 display:none;
             }
             .cardDescriptionShow{
@@ -87,6 +84,7 @@
                 //animation: 0.3s apparition forwards;
                 overflow: hidden;
                 display:block;
+                padding:20px;
             }
             .cardDescriptionIcon{
                 cursor:pointer;

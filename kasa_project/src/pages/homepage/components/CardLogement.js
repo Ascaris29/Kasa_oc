@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function CardLogement({className, title, cover, id}){
     return (   
-        <NavLink className={`${style.card} ${className}`} to={`/Kasa_oc/logement/${id}`}>
+        <NavLink className={`${style.card} ${className}`} to={`/Kasa/logement/${id}`}>
             <img src={cover} alt="" className={`${style.cardImg}`} />
             <h3 className={style.titleCard}><span className={`${style.cardTitleTxt}`}>{title}</span></h3>
         </NavLink>

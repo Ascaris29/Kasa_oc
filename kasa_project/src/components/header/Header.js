@@ -5,21 +5,21 @@ import { Link, NavLink } from "react-router-dom";
 export default function Header(){
     return (
         <header className={`${style.header} d-flex justify-between align-center`}>
-            <Link className={`${style.headerIcon}`} to="/Kasa_oc/homepage">
+            <Link className={`${style.headerIcon}`} to="/Kasa/homepage">
                 <img src={image} alt="logo du site Kasa representant une maison"/>
             </Link>
             <div className={`${style.headerNav}`}>
                 <ul className="d-flex">
                     <NavLink 
                     className={`${style.headerItems} m-r-30`}
-                    to="/Kasa_oc/homepage" 
+                    to="/Kasa/homepage" 
                     end
                     > 
                     Accueil 
                     </NavLink>
                     <NavLink 
                     className={`${style.headerItems}`} 
-                    to="/Kasa_oc/apropos"
+                    to="/Kasa/apropos"
                     >
                     A Propos
                     </NavLink>
