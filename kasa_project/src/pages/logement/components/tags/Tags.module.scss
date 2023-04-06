@@ -1,7 +1,19 @@
+@use "../../../../assets/styles/mixins" as mixin;
+
 .Tags{
     background-color:var(--primary);
     color:white;
     margin-right:20px;
     padding:5px 25px;
     border-radius: 10px;
+    @include mixin.xs{
+        min-width:85px;
+        font-size:10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding:3px 15px;
+        border-radius: 5px;
+    }
+    
 }

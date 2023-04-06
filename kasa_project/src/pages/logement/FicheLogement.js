@@ -1,5 +1,5 @@
 import style from "./FicheLogement.module.scss";
-import CardDescription from "../a_propos/components/carddescription/CardDescription";
+import CardDescription from "../../components/carddescription/CardDescription";
 import Tags from "./components/tags/Tags";
 import Caroussel from "./components/caroussel/Caroussel";
 import Ratings from "./components/Ratings/Ratings";

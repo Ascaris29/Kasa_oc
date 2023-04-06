@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function CardDescription({title, text, classNameCard}){
 
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, setIsHidden] = useState(true);
    
     function handleShowCardHidden(){
         setIsHidden(!isHidden);

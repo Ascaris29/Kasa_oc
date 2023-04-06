@@ -21,6 +21,12 @@
         @include mixin.xs{
             height:300px;
         }
+        img{
+            height:100%;
+        }
+        @include mixin.xs{
+            height:255px;
+        }
     }
     .fichelogementContent{
         margin-top:20px;
@@ -39,6 +45,17 @@
             }
             .fichelogementTitle{
                 font-size:36px;
+                @include mixin.sm-lt{
+                    font-size:18px;
+                    font-weight:500;
+                }
+            }
+            .fichelogementSousTitle{
+                font-size:18px;
+                font-weight:500;
+                @include mixin.sm-lt{
+                    font-size:14px;
+                }
             }
             
             .fichelogementTags{
@@ -46,9 +63,8 @@
                 display:flex;
                 flex-direction:row;
                 @include mixin.xs{
-                    flex-direction: column;
                     gap:20px;
-                    
+                    width:100%;
                 }
             }
         }
@@ -65,8 +81,8 @@
                 width:100%;
             }
             .fichelogementPhotoIdentite{
-                width:65px;
-                height:65px;
+                width:64px;
+                height:64px;
                 border-radius:50%;
                 object-fit:cover;
                 img{
@@ -86,6 +102,10 @@
             .fichelogementIdentity{
                 p{
                     width:90px;
+                    @include mixin.sm-lt{
+                        font-size:12px;
+                        font-weight:500;
+                    }
                 }
                 @include mixin.lg-lt{
                     flex-direction: row;

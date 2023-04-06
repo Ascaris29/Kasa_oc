@@ -4,6 +4,9 @@
     max-width:1240px;
     margin:auto;
     width:100%;
+    @include mixin.sm-lt{
+        padding:20px;
+    }
     .homepageImg{
         height:223px;
         position:relative;
@@ -18,12 +21,21 @@
             height:100%;
             transform: translate(-50%,-50%);
             border-radius:var(--radius);
+            @include mixin.sm-lt{
+                border-radius:10px;
+            }
         }
         img{
             width:100%;
             height:100%;
             object-fit: cover;
             border-radius:var(--radius);
+            @include mixin.sm-lt{
+                border-radius:10px;
+            }
+        }
+        @include mixin.sm-lt{
+            height:111px;
         }
         .homepageTxtImg{
             position:absolute;
@@ -31,20 +43,24 @@
             left:50%;
             transform:translate(-50%, -50%);
             color:white;
-            font-size:40px;
+            font-size:48px;
             z-index:1;
-            font-weight:500;
+            width:60%;
             @include mixin.md-lt{
                 font-size:30px;
             }
             @include mixin.sm-lt{
-                font-size:25px;
+                font-size:23px;
+                left:35%;
             }
         }
     }
     .homepageGallery{
         background-color: var(--grey1);
         border-radius:25px;
+        @include mixin.sm-lt{
+            background-color: transparent;
+        }
         .homepageCard{
             display:grid;
             grid-template-columns: repeat(3, 340px);
@@ -67,6 +83,7 @@
             }
             @include mixin.sm-lt{
                 grid-template-columns: 1fr;
+                padding:0;
             }
         }
     }

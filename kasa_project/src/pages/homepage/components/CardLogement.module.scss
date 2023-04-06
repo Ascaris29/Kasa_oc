@@ -9,6 +9,17 @@
         position:relative;
         cursor:pointer;
         transition:0.5s;
+        &:after{
+            content:"";
+            width:100%;
+            height:100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            border-radius:10px;
+        }
         @include mixin.lg-lt{
             height:300px;
         }
@@ -18,6 +29,7 @@
         @include mixin.xs{
             height:200px;
         }
+        
         &:hover{
             transform: scale(1.1);
         }
@@ -26,18 +38,18 @@
             height:100%;
             object-fit:cover;
             border-radius: 10px;
+            position:relative;
             
         }
         .titleCard{
-            background-color:rgba(0,0,0, 0.5);
             position:absolute;
             bottom:10%;
             font-size:18px;
             font-weight:500;
             line-height: 25px;
             margin:20px;
-            padding:10px;
             border-radius:15px;
+            z-index:9999;
             .cardTitleTxt{
                 z-index:1;
                 color:white;

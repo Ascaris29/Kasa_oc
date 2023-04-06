@@ -6,27 +6,23 @@ import Homepage from './pages/homepage/Homepage';
 import FicheLogement from './pages/logement/FicheLogement';
 
 
-
+//création du router et des routes
 export const router = createBrowserRouter([
     {
-        path : "/Kasa",
+        path : "/",
         element : <App />,
         errorElement: <Error404 />,
         children : [
             {
-                path : "/Kasa",
+                path : "/",
                 element : <Homepage />
             } ,
             {
-                path : "/Kasa/homepage",
-                element : <Homepage />
-            },
-            {
-                path: "/Kasa/apropos",
+                path: "/apropos",
                 element : <APropos />
             },
             {
-                path: "/Kasa/logement/:idUrl",
+                path: "/logement/:idUrl",
                 element : <FicheLogement />
             },
         ],

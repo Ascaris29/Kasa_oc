@@ -1,6 +1,6 @@
 import style from "./APropos.module.scss";
 import image from "../../assets/images/background_apropos.png";
-import CardDescription from "./components/carddescription/CardDescription";
+import CardDescription from "../../components/carddescription/CardDescription";
 
 export default function APropos(){
     return (

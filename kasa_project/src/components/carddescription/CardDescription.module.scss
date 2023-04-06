@@ -1,4 +1,4 @@
-@use "../../../../assets/styles/mixins" as mixin;
+@use "../../assets/styles/mixins" as mixin;
 
 @keyframes disparition {
     0%{
@@ -72,7 +72,13 @@
                 justify-content: space-between;
                 border-radius:5px 5px 0 0;
                 margin:0;
+                font-size:18px;
+                font-weight:500;
                 cursor:pointer; 
+                @include mixin.xs{
+                    font-size:13px;
+                    font-weight:500;
+                }
             }
             .cardDescriptionHidden{
                 //animation: 0.3s disparition forwards;
@@ -85,6 +91,12 @@
                 overflow: hidden;
                 display:block;
                 padding:20px;
+                font-size:18px;
+                font-weight:400;
+                @include mixin.xs{
+                    font-size:12px;
+                    font-weight:400;
+                }
             }
             .cardDescriptionIcon{
                 cursor:pointer;

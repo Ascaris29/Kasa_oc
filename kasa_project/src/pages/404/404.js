@@ -7,14 +7,6 @@ export default function Error404(){
     const error = useRouteError();
     const status = error.status;
 
-    function gestionErreur(){
-        if(status === 404){
-            return <p className="d-flex flex-column justify-center align-center">Oups! La page que vous demandez n'existe pas.</p>
-        }
-        if(status === 401){
-            return <p className="d-flex flex-column justify-center align-center"> Désolé, vous n'êtes pas autorisé à acceder à cette page.</p>
-        }
-    }
       
     return (
         <div className={`${style.error}`}>
@@ -23,8 +15,8 @@ export default function Error404(){
                     <div className={`${style.errorStatus} `}>
                         {status}  
                     </div>
-                    <span className={`${style.errorTxt}`}>{gestionErreur()}</span>
-                    <Link className="link" to="/homepage"> Retourner sur la page d'accueil</Link>
+                    <span className={`${style.errorTxt}`}><p className="d-flex flex-column justify-center align-center">Oups! La page que vous demandez n'existe pas.</p></span>
+                    <Link className={`${style.linkError}`} to="/"> Retourner sur la page d'accueil</Link>
                 </div>   
             <Footer />
         </div>

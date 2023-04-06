@@ -28,9 +28,7 @@
     cursor:pointer;
     font-size:24px;
     @include mixin.sm-lt{
-        font-size:20px;
-    }
-    @include mixin.xs{
-        font-size:15px;
+        font-size:12px;
+        text-transform: uppercase;
     }
 }
