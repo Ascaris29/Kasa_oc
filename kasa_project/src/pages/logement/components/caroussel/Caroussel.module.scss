@@ -1,5 +1,16 @@
 @use "../../../../assets/styles/mixins" as mixin;
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+
     .carousselImage{
         width:100%;
         height:100%;  
@@ -37,3 +48,12 @@
         margin-bottom:10px;
     }
     
+.loader{
+    padding: 10px;
+    border: 6px solid black;
+    border-bottom-color: black;
+    border-radius: 22px;
+    animation: rotate 1s infinite linear;
+    height: 0;
+    width: 0;
+}
