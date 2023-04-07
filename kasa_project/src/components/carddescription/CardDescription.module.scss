@@ -72,7 +72,7 @@
                 justify-content: space-between;
                 border-radius:5px 5px 0 0;
                 margin:0;
-                font-size:18px;
+                font-size:24px;
                 font-weight:500;
                 cursor:pointer; 
                 @include mixin.xs{
@@ -91,7 +91,7 @@
                 overflow: hidden;
                 display:block;
                 padding:20px;
-                font-size:18px;
+                font-size:24px;
                 font-weight:400;
                 @include mixin.xs{
                     font-size:12px;

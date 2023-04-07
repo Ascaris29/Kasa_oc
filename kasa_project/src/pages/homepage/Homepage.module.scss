@@ -46,12 +46,17 @@
             font-size:48px;
             z-index:1;
             width:60%;
+            font-weight:500;
             @include mixin.md-lt{
                 font-size:30px;
             }
             @include mixin.sm-lt{
-                font-size:23px;
+                font-size:24px;
                 left:35%;
+                font-weight:500;
+                -webkit-line-clamp: 2;
+                display:-webkit-box;
+                -webkit-box-orient: vertical;
             }
         }
     }
