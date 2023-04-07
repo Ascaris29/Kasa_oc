@@ -26,6 +26,9 @@
         }
         img{
             height:100%;
+            @include mixin.sm-lt{
+                border-radius:10px;
+            }
         }
         @include mixin.xs{
             height:255px;
